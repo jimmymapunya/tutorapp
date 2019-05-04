@@ -26,6 +26,13 @@ public class MainActivity extends AppCompatActivity {
 
         initialize();
 
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity( new Intent(mContext, LoginActivity.class));
+            }
+        });
+
         btnSingUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
